@@ -1,7 +1,13 @@
-Project Name
-============
+`seek-ext`: convenience methods for `io::Seek`
+==============================================
 
-Foo bar baz.
+[![Build Status](https://img.shields.io/travis/LukasKalbertodt/seek-ext/master.svg)](https://travis-ci.org/LukasKalbertodt/seek-ext)
+[![crates.io version](https://img.shields.io/crates/v/seek-ext.svg)](https://crates.io/crates/seek-ext)
+[![docs](https://docs.rs/seek-ext/badge.svg)](https://docs.rs/seek-ext)
+
+This crate offers the trait `SeekExt` which is implemented for all `T where T: io::Seek`. That way, some convenience methods are added to all types that implement `io::Seek`.
+
+This crate was created mainly to drive discussion about the inclusion of these convenience methods into the standard library.
 
 ---
 
