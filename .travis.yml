@@ -1,0 +1,21 @@
+language: rust
+rust:
+  - stable
+  - beta
+  - nightly
+
+script:
+  - cargo build --all --verbose || travis_terminate 1
+  - cargo test --all --verbose || travis_terminate 1
+
+env:
+  - RUSTFLAGS="--deny warnings"
+
+matrix:
+  allow_failures:
+    - rust: nightly
+  fast_finish: true
+  include:
+    - name: "Check style"
+      language: generic
+      script: ./ci/check-basic-style.sh
