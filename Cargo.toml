@@ -4,4 +4,17 @@ version = "0.1.0"
 authors = ["Lukas Kalbertodt <lukas.kalbertodt@gmail.com>"]
 edition = "2018"
 
+description = """
+Extension trait to add convenience methods to `io::Seek` types
+"""
+documentation = "https://docs.rs/seek-ext"
+repository = "https://github.com/LukasKalbertodt/seek-ext"
+license = "MIT/Apache-2.0"
+keywords = ["seek", "ext", "length", "stream"]
+categories = ["rust-patterns"]
+readme = "README.md"
+
+[badges]
+travis-ci = { branch = "master", repository = "LukasKalbertodt/seek-ext" }
+
 [dependencies]
